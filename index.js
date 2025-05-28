@@ -1,13 +1,10 @@
-import React from "react";
-import {NativeModules} from "react-native";
 import MyCustomScreen from "./MyCustomScreen";
-const {RNCustomCode} = NativeModules;
- 
-export const applyCustomCode = externalCodeSetup => {
+
+export const applyCustomCode = (externalCodeSetup: any) => {
   externalCodeSetup.navigationApi.addNavigationRoute(
-"customScreen",
-"MyCustomScreen",
-MyCustomScreen,
-"All" // "Auth" | "noAuth" | "Main" | "All"
+    "customScreen",
+    "MyCustomScreen",
+    MyCustomScreen,
+    "All" // "Auth" | "noAuth" | "Main" | "All"
   );
 };
