@@ -1,4 +1,4 @@
-import MyCustomScreen from "./MyCustomScreen";
+import MyCustomScreen from "./custom_code/MyCustomScreen";
 
 export const applyCustomCode = (externalCodeSetup: any) => {
   externalCodeSetup.navigationApi.addNavigationRoute(
